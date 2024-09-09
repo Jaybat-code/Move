@@ -1,0 +1,68 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(82, 112, 138);
+}
+.game-container{
+    border:5px solid black;
+    margin:auto;
+    width:1000px;
+    position:relative;
+    top:50px;
+    height:1000px;
+}
+.player{
+    background-color: red;
+    height:75px;
+    width:75px;
+    position: absolute;
+    left:500px;
+    top:500px;
+    transform: translate(-50%,-50%);
+    border-radius: 500px;
+    box-shadow: 2px 2px 5px 2px black;
+}
+.input-container{
+    position:relative;
+    border:5px solid black;
+    width:310px;
+    left:250px;
+    top:-500px;
+    height:205px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    gap: 5px; 
+
+}
+.input-button{
+    background:linear-gradient(130deg, yellow,blue 5%,cyan);
+    height:100px;
+    width:100px;
+    border:1px solid black;
+    border-radius: 20px;
+}
+.input-button:hover{
+    background:linear-gradient(40deg,rgb(90, 133, 161),blue);
+}
+.input-button:active{
+    background:blue;
+    color:white;
+    border:5px solid black;
+    box-shadow: 3px 3px 15px 15px yellow;
+}
+#UP{
+    grid-column: 2/3;
+}
+#LEFT{
+    grid-column: 1/2;
+    grid-row:2/3
+}
+#DOWN{
+    grid-column: 2/3;
+    grid-row:2/3
+}
+#RIGHT{
+    grid-row:2/3;
+    grid-column: 3/4;
+}
